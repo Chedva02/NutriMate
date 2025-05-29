@@ -1,8 +1,7 @@
 
 import { Outlet } from "react-router-dom";
-import  NutritionAppBar  from "./NutritionAppBar";
 import Options from "./Options";
-import {  Typography,Grid,  Box} from '@mui/material';
+
 
 const Layout = () => {
   return (

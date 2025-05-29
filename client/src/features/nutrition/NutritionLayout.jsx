@@ -39,7 +39,7 @@ const NutritionLayout = () => {
               to="addIteam"
               //href="addIteam"
               variant="contained"
-              color="secondary"
+              color="success"
               sx={{ mt: { xs: 1, sm: 0 } }}
             >
               <AddCircleIcon/>
@@ -49,7 +49,7 @@ const NutritionLayout = () => {
           component={Link}
           to="deleteIteam"
           variant="contained"
-          color="secondary"
+          color="success"
           sx={{ mt: { xs: 1, sm: 0 } }}
         >
           <DeleteIcon/>

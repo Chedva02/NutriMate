@@ -94,6 +94,7 @@ const WelcomeDashboard = () => {
 <ButtonBaseDemo/>
      {/* מתכונים נצפים לאחרונה */}
       {recentRecipes.length > 0 && (
+        <div dir="rtl">
         <Grid item xs={12}>
           <Paper elevation={3} sx={{ padding: 3, mt: 2 }}>
             <Typography variant="h6" gutterBottom>
@@ -107,12 +108,13 @@ const WelcomeDashboard = () => {
                   button
                   onClick={() => handleClick(recipe)}
                 >
-                  <ListItemText primary={recipe.title} />
+                  <ListItemText primary={recipe.name} />
                 </ListItem>
               ))}
             </List>
           </Paper>
         </Grid>
+        </div>
       )}
     </Grid>
     </Box>
