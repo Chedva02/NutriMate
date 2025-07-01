@@ -3,6 +3,7 @@ const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
 
 const login = async (req, res) => {
+    console.log("Login request received");
     const { username, password } = req.body;
     if (!username || !password) {
         return res.status(400).json({ message: 'All fields are required' });

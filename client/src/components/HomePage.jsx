@@ -5,10 +5,11 @@ import ButtonGroup from '@mui/material/ButtonGroup';
 import Box from '@mui/material/Box';
 import PersonAddIcon from '@mui/icons-material/PersonAdd'//add
 import PersonIcon from '@mui/icons-material/Person'//login
+import { Link } from 'react-router-dom';
 
 const buttons = [
-  <Button key="login" color="success" startIcon={<PersonIcon/>}  href="/login">כניסת משתמשים</Button>,
-  <Button key="register" color="success" startIcon={<PersonAddIcon/>} href="/register">משתמש חדש</Button>,
+  <Button key="login" color="success" startIcon={<PersonIcon/>} component={Link} to="/login">כניסת משתמשים</Button>,
+  <Button key="register" color="success" startIcon={<PersonAddIcon/>} component={Link} to="/register">משתמש חדש</Button>,
 ];
 const backgroundStyle = {
     backgroundImage: `url(${process.env.PUBLIC_URL + '/images/top-view-healthy-balanced-vegetarian-food.jpg'})`,

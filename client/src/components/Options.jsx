@@ -7,6 +7,7 @@ import { AppBar, Box, Toolbar, Button, useMediaQuery } from '@mui/material';
 import { jwtDecode } from 'jwt-decode';
 import { useTheme } from '@mui/material/styles';
 import { Grid,Typography } from '@mui/material'
+import { Link } from 'react-router-dom';
 
 const Options = () => {
   const token = localStorage.getItem('token');
@@ -49,7 +50,8 @@ const Options = () => {
             variant="outlined"
             color="success"
             startIcon={<AddReactionIcon />}
-            href="/user"
+            component={Link}
+            to="/user"
           >
             User Options
           </Button>
@@ -59,7 +61,8 @@ const Options = () => {
           variant="outlined"
           color="success"
           startIcon={<ReceiptLongIcon />}
-          href="/recipe"
+          component={Link}
+          to="/recipe"
         >
           Recipe
         </Button>
@@ -68,7 +71,8 @@ const Options = () => {
           variant="outlined"
           color="success"
           startIcon={<AppleIcon />}
-          href="/nutritionLayout"
+          component={Link}
+          to="/nutritionLayout"
         >
           Menu
         </Button>
@@ -77,7 +81,8 @@ const Options = () => {
           variant="outlined"
           color="success"
           startIcon={<ImageSearchIcon />}
-          href="/cookbook"
+          component={Link}
+          to="/cookbook"
         >
           Cookbook
         </Button>
@@ -86,7 +91,8 @@ const Options = () => {
           variant="outlined"
           color="success"
           startIcon={<VerifiedIcon />}
-          href="/bmi"
+          component={Link}
+          to="/bmi"
         >
           BMI
         </Button>
